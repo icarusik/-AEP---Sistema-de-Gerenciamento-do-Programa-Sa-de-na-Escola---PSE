@@ -27,3 +27,51 @@ Além disso, o software contará com um **resumo geral das ações**, permitindo
 O desenvolvimento do projeto também busca aplicar, na prática, conhecimentos adquiridos durante o curso de **Engenharia de Software**, especialmente conceitos relacionados ao levantamento de requisitos, modelagem, algoritmos, fluxogramas, programação, validação e testes.
 
 Por fim, o sistema foi planejado considerando a **privacidade e a proteção dos dados**, não armazenando nomes de estudantes, diagnósticos, prontuários ou informações clínicas individuais. Dessa forma, o projeto mantém seu foco no acompanhamento coletivo das ações do PSE.
+
+programa
+{
+	funcao inicio()
+	{
+		inteiro codigo
+		cadeia escola
+		cadeia tema
+		cadeia data_prevista
+		inteiro qtd_prevista
+
+		escreva("====================================\n")
+		escreva("    CADASTRO DE AÇÃO DO PSE        \n")
+		escreva("====================================\n")
+
+		escreva("Digite o código da ação: ")
+		leia(codigo)
+
+		escreva("Digite o nome da escola: ")
+		leia(escola)
+
+		escreva("Digite o tema da ação: ")
+		leia(tema)
+
+		escreva("Digite a data prevista (DD/MM/AAAA): ")
+		leia(data_prevista)
+
+		escreva("Digite a quantidade prevista de participantes: ")
+		leia(qtd_prevista)
+
+		enquanto (qtd_prevista <= 0)
+		{
+			escreva("Erro! A quantidade deve ser maior que zero.\n")
+			escreva("Digite a quantidade prevista novamente: ")
+			leia(qtd_prevista)
+		}
+
+		escreva("\n====================================\n")
+		escreva("    AÇÃO CADASTRADA COM SUCESSO!    \n")
+		escreva("====================================\n")
+		escreva("Código: ", codigo, "\n")
+		escreva("Escola: ", escola, "\n")
+		escreva("Tema: ", tema, "\n")
+		escreva("Data: ", data_prevista, "\n")
+		escreva("Participantes Previstos: ", qtd_prevista, "\n")
+		escreva("Situação Inicial: Planejada\n")
+	}
+}
